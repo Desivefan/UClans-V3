@@ -1,0 +1,182 @@
+ 
+ 
+ 
+ 
+# BANNER GUI
+ 
+ 
+ 
+ 
+Banner:
+  #Clan Banner config
+  banner_home:
+    title: '&a&lClan Banner menu'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:2;STAINED_GLASS_PANE:10
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        data: 0
+        amount: 1
+        glow: false
+        name: '&aCurrent Banner'
+        lore:
+        - ' '
+        - ' &eThe clan banner is your brand'
+        - '&eand your &b&lNEXUS &eused for land marking!'
+        - ''
+        - ' &b&l<< &cUse the buttons on the sides &b&l>>'
+      upload:
+        clicksound: ''
+        material: LEVER
+        texture: ''
+        data: 0
+        amount: 1
+        glow: true
+        name: '&aUpload'
+        lore:
+        - ''
+        - ' &eClick to open upload menu.'
+      delete:
+        clicksound: ''
+        material: BARRIER
+        texture: ''
+        data: 0
+        amount: 1
+        glow: false
+        name: '&aDelete a Banner'
+        lore:
+        - ''
+        - ' &eClick to delete the current banner.'
+      pre:
+        clicksound: ''
+        material: ITEM_FRAME
+        texture: ''
+        data: 0
+        amount: 1
+        glow: false
+        name: '&aPre created banners.'
+        lore:
+        - ''
+        - ' &eClick to open list.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        data: 0
+        amount: 1
+        glow: false
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+  #Clan Banner config
+  banner_delete:
+    title: '&cConfirm delete current banner?'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:2;STAINED_GLASS_PANE:10
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      confirm:
+        clicksound: ''
+        material: DIAMOND_BLOCK
+        texture: ''
+        data: 0
+        amount: 1
+        glow: true
+        name: '&aConfirm'
+        lore:
+        - ''
+        - ' &cClick to confirm.'
+      cancel:
+        clicksound: ''
+        material: REDSTONE_BLOCK
+        texture: ''
+        data: 0
+        amount: 1
+        glow: true
+        name: '&aCancel'
+        lore:
+        - ''
+        - ' &eClick to cancel.'
+  #Clan Banner config
+  banner_upload:
+    title: '&a&lBanner Upload'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:2;STAINED_GLASS_PANE:10
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      fill2:
+        clicksound: ''
+        material: STAINED_GLASS_PANE:14
+        amount: 1
+        glow: false
+        name: '&cPlace your new banner here!'
+        lore:
+        - ' '
+        - ' &cPlace your new banner here!'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      confirm:
+        clicksound: ''
+        material: DIAMOND_BLOCK
+        texture: ''
+        data: 0
+        amount: 1
+        glow: true
+        name: '&aClick to save.'
+        lore:
+        - ''
+        - ' &eClick here to save.'
+      back:
+        clicksound: ''
+        material: REDSTONE_BLOCK
+        texture: ''
+        data: 0
+        amount: 1
+        glow: true
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &cClick to go back.'

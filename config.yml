@@ -1,0 +1,344 @@
+#
+#THE LIST OF PLACEHOLDERS HAS BEEN MOVED TO THE 'PLACEHOLDERS.txt' FILE
+#
+Plugin:
+  check_for_updates: true
+ 
+# multiserver settings have been moved to the multiserver.yml file
+Multiserver: --moved to the multiserver.yml file
+Server: --moved to the multiserver.yml file
+ 
+Config:
+  date_format: dd/MM/yyyy HH:mm
+  disable_command_chat_interactions: false
+  # use '' to disable confirmation
+  confirm: CONFIRM
+  confirm_case_sensitive: true
+  teleport_delay: 3
+  aliases_tabcomplete: true
+  commands_tabcomplete: true
+  help_max_result: 11
+  logs:
+    clan: true
+    stacktrace: true
+  special_permissions:
+    bypass_command_cooldown: uclans.bypass_command_cooldown
+    bypass_command_regions: uclans.bypass_command_regions
+    bypass_command_worlds: uclans.bypass_command_worlds
+ 
+War:
+  #If disabled this does not appear in the menu and the command is marked as disabled.
+  enabled: true
+  times:
+    inwait: 60
+    inlobby: 30
+    started: 60
+  # If TRUE, the war only starts if the 2 clans have the same amount of players in the arena
+  just_start_equal_amounts: false
+  # If FALSE, war is sent directly after arena selection
+  enable_kits: true
+  # If TRUE, and the war is fought using Kits, the survivors' inventories will be cleared at the end
+  clear_inv_on_use_kit: false
+  # IN SECONDS
+  cooldown_clanwar: 60
+  amount_format: 1|2|3|5|10|64
+  allowed_commands:
+  - /clan
+  - /uclan
+  - /.
+  - /clanchat
+  # Commands sent by the console to all players alive
+  rewards:
+  - /eco give %player% 1000000
+ 
+# Level settings have been moved to the level.yml file
+Level: --moved to the level.yml file
+ 
+Home:
+  #If disabled this does not appear in the menu and the command is marked as disabled.
+  enabled: true
+  default: 1
+ 
+Chest:
+  #If disabled this does not appear in the menu and the command is marked as disabled.
+  enabled: true
+  extra_chest_limit: 1
+  extra_chest_price: 1000.0
+  extra_chest_price_multiplier: 2.5
+  extra_chest_permission_buy: uclans.player.vip
+  default: 1
+   
+  #You can configure active saving of chests, time is counted in seconds
+  #If active save is turned off the chest is only saved when the inventory is closed or the page is changed
+  save:
+    active: true
+    time: 5
+ 
+Hologram:
+  enabled: true
+  prefix: uc_
+  maxlist: 10
+  ajust-Y: 2.0
+  header: '&d&lTop %amount% %top_type% Clans.'
+  footer: '&eFor more use &b/clan list'
+  format: '&6&l%num%° &7- &a%uclans_tag_color% &7- %uclans_count_members% member(s) &7- &b%uclans_clan_kills%&8/&b%uclans_clan_deaths% &8(%uclans_clan_kdr%)'
+  kdr_format: '&6&l%num%° &7- &a%uclans_tag_color% &7- &b%uclans_clan_kills%&8/&b%uclans_clan_deaths% &8(%uclans_clan_kdr%)'
+  kill_format: '&6&l%num%° &7- &a%uclans_tag_color% &7- &b%uclans_clan_kills% Kill(s)'
+  death_format: '&6&l%num%° &7- &a%uclans_tag_color% &7- &b%uclans_clan_deaths% Death(s)'
+  member_format: '&6&l%num%° &7- &a%uclans_tag_color% &7- %uclans_count_members% member(s)'
+  bank_format: '&6&l%num%° &7- &a%uclans_tag_color% &7- &a$%uclans_bank_balance%'
+  level_format: '&6&l%num%° &7- &a%uclans_tag_color% &7- &aLv %uclans_level%'
+  war_format: '&6&l%num%° &7- &a%uclans_tag_color% &7- &a%uclans_clan_war_win%&7/&4%uclans_clan_war_lose%'
+  all_format: '&6&l%num%° &7- &a%uclans_tag_color% &7- &a%uclans_creation_date_formated%'
+  tasks:
+    # IN SECONDS
+    holosave_start: 300
+    # IN SECONDS
+    holosave: 300
+    # IN SECONDS
+    holorefresh_start: 5
+    # IN SECONDS
+    holorefresh: 300
+    #IN TICKS (20 TICKS = 1 SECOND, RECOMENDED 5~10)
+    holospawnafter: 5
+ 
+Wand:
+  item:
+    material: STICK
+    data: 0
+    amount: 1
+    name: '&4UltimateClans &6&lWAND'
+    lore:
+    - ' '
+    - ' &eThis item should be used to mark'
+    - '&eregion points for region.'
+    - ' '
+    - ' &bLEFT-CLICK &7to mark point &b#1'
+    - ' &bRIGHT-CLICK &7to mark point &b#2'
+    flags:
+    - HIDE_ENCHANTS
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;2
+    nbt:
+      string:
+      - NbtExample:teste
+      int:
+      - NbtExample2:0001
+ 
+Clan:
+  #Relationship between clans
+  relation:
+    ally:
+      color: '&a'
+      text: '[Ally]'
+    rival:
+      color: '&c'
+      text: '[Rival]'
+    neutral:
+      color: '&e'
+      text: '[NR]'
+    sameclan:
+      color: '&6'
+      text: ''
+  default_banner: ARMOR_STAND:0
+  allies_can_war: true
+  disable_allypvp_onff: true
+  disable_shared_chat_ally: false
+  disabled_command_worlds:
+  - disabled_worlds
+  disabled_regroup_worlds:
+  - disabled_worlds
+  forced_ff_worlds:
+  - disabled_worlds
+  disabled_chest_worlds:
+  - disabled_worlds
+  disabled_home_worlds:
+  - disabled_worlds
+  #UClans Regions or WorldGuard Regions
+  disabled_command_regions:
+  - no_command_region
+  #UClans Regions or WorldGuard Regions
+  disabled_regroup_regions:
+  - no_regroup_region
+  #UClans Regions or WorldGuard Regions
+  forced_ff_regions:
+  - forced_worlds
+  #UClans Regions or WorldGuard Regions
+  disabled_chest_regions:
+  - no_chest_region
+  #UClans Regions or WorldGuard Regions
+  disabled_home_regions:
+  - no_home_region
+  war_invite:
+     # IN SECONDS
+    max_time_seconds: 60
+  regroup_invite:
+     # IN SECONDS
+    max_time_seconds: 60
+  rival_remove:
+    need_confirmation: true
+     # IN SECONDS
+    max_time_seconds: 60
+  ally_invite:
+    need_confirmation: true
+     # IN SECONDS
+    max_time_seconds: 60
+  invite:
+    # IN SECONDS
+    max_time_seconds: 60
+    allowed_chars: '[0-9a-zA-Z_ -]*'
+  join_leave_clan:
+    # INSECONDS
+    delay: 1
+    #example commands, Only %clantag% and %player% can be used here
+    create_commands:
+    - lp user %player% permission set uclans.clan
+    #example commands, Only %clantag% and %player% can be used here
+    delete_commands:
+    - lp user %player% permission set uclans.clan
+    #example commands, Only %clantag% and %player% can be used here
+    join_commands:
+    - lp user %player% permission set uclans.clan
+    - uking addcoin %clantag% 500
+    #example commands, Only %clantag% and %player% can be used here
+    leave_commands:
+    - lp user %player% permission unset uclans.clan
+  chat:
+    #Any UCLANS placeholder can be used.
+    format: '%uclans_tag_color% &d> &d%uclans_level_identifier%&5%player%&d: &d%chat_message%'
+    spy_tag: '&8[SPY] '
+    magic: true
+    colors: true
+  verify:
+    always_verified: true
+    list_unverified: true
+  #points added to the clan and player KDR when the events below occur, (kills/deaths = ratio)
+  kills:
+    neutral: 1
+    ally: 0
+    rival: 3
+  #These must be the same arguments used in the commands.yml file
+  match:
+    rival:
+      add: add
+      remove: remove
+      accept: accept
+      deny: deny
+    ally:
+      add: add
+      remove: remove
+      accept: accept
+      deny: deny
+    war:
+      send: send
+      accept: accept
+      deny: deny
+      join: join
+      cancel: cancel
+    regroup:
+      send: send
+      accept: accept
+      deny: deny
+    home:
+      create: create
+      delete: delete
+      list: list
+      teleport: teleport
+    banner:
+      open: open
+      send: send
+      delete: delete
+  prices:
+    #Default VAULT, if "false" does not charge player values.
+    enabled: true
+    desc: 0.0
+    create: 1000.0
+    invite: 0.0
+    deny: 0.0
+    join: 0.0
+    leave: 0.0
+    kick: 0.0
+    promote: 0.0
+    demote: 0.0
+    disband: 0.0
+    home: 0.0
+    modtag: 0.0
+    # ALL RIVAL COMMANDS
+    rival: 0.0
+    # ALL ALLY COMMANDS
+    ally: 0.0
+    togglechat: 0.0
+    toggleff: 0.0
+    name: 0.0
+    chest: 0.0
+    war: 100.0
+    settings: 0.0
+    regroup: 0.0
+  limits:
+     # NUM MAX OF PLAYERS BY CLAN
+    max_by_clan: 10
+  tasks:
+    update_list:
+      #IN SECONDS
+      start: 5
+      #IN SECONDS
+      next: 300
+    update_invite:
+      #IN SECONDS
+      start: 5
+      #IN SECONDS
+      next: 300
+    update_allinvite:
+      #IN SECONDS
+      start: 5
+      #IN SECONDS
+      next: 1
+  level:
+    leader:
+      identifier: '&6**&r'
+    mod:
+      identifier: '&2*&r'
+  list:
+    max_pag: 10
+    max_list: 10
+    use_next_prev: false
+  tag:
+    #You can enable colors with user permissions, leave it blank so everyone can use colors!
+    color_permission: ''
+    min_chars: 2
+    max_chars: 4
+    allowed_chars: '[0-9a-zA-Z_-]*'
+    disable_magic: true
+    default_color: '&8'
+    start: '&f['
+    end: '&f]&r'
+    noclan_formated: '&4WITHOUT CLAN'
+    # example, for russian character use 'CYRILLIC', all list in https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html
+    unicodeblock: ''
+  desc:
+    #You can enable colors with user permissions, leave it blank so everyone can use colors!
+    color_permission: ''
+    min_chars: 2
+    max_chars: 32
+    allowed_chars: '[0-9a-zA-Z_ -]*'
+    disable_magic: true
+    default_color: '&8'
+    nodesc_formated: '&8WITHOUT DESC'
+    # example, for russian character use 'CYRILLIC', all list in https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html
+    unicodeblock: ''
+  name:
+    #You can enable colors with user permissions, leave it blank so everyone can use colors!
+    color_permission: ''
+    min_chars: 2
+    max_chars: 32
+    allowed_chars: '[0-9a-zA-Z_ -]*'
+    disable_magic: true
+    default_color: '&8'
+    noname_formated: '&8WITHOUT NAME'
+    # example, for russian character use 'CYRILLIC', all list in https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html
+    unicodeblock: ''
+ 
+# DONT CHANGE THIS
+version:
+  d: 3.0.6
+  r: false

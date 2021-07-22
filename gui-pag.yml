@@ -1,0 +1,789 @@
+Pagination:
+  rival:
+    title: '&a&lRival List '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:14;STAINED_GLASS_PANE:1
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        data: 0
+        amount: 1
+        glow: true
+        name: '&aClan %uclans_tag_color%'
+        lore:
+        - ''
+        - ' &eClan Information'
+        - ' &7'
+        - ' &7Level: &a%uclans_level%'
+        - ' &7'
+        - ' &7Tag: &b%uclans_tag_color%'
+        - ' &7Leader: &b%uclans_leader%'
+        - ' &7Members: &b%uclans_count_members%'
+        - ''
+        - ' &eRight-Click to view info.'
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        data: 8
+        amount: 1
+        glow: false
+        name: '&aPrevious page'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        data: 8
+        amount: 1
+        glow: false
+        name: '&aNext page'
+        lore:
+        - ''
+        - ' &eClick to proceed.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        data: 0
+        amount: 1
+        glow: false
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+  ally:
+    title: '&a&lAlly List '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:3;STAINED_GLASS_PANE:11
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        amount: 1
+        glow: true
+        name: '&aClan %uclans_tag_color%'
+        lore:
+        - ''
+        - ' &eClan Information'
+        - ' &7'
+        - ' &7Level: &a%uclans_level%'
+        - ' &7'
+        - ' &7Tag: &b%uclans_tag_color%'
+        - ' &7Leader: &b%uclans_leader%'
+        - ' &7Members: &b%uclans_count_members%'
+        - ''
+        - ' &eRight-Click to view info.'
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aPrevious page'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aNext page'
+        lore:
+        - ''
+        - ' &eClick to proceed.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+  members:
+    title: '&a&lMember List '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:5;STAINED_GLASS_PANE:13
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        texture: '%uclans_player%'
+        amount: 1
+        glow: false
+        name: '&a%uclans_player%'
+        lore:
+        - ''
+        - ' &7Leader: &b%uclans_player_leader_yes_no%'
+        - ' &7Moderators: &b%uclans_player_mod_yes_no%'
+        - ' &7Nickname: &b%uclans_player%'
+        - ' &7Kdr: &b%uclans_player_kills%&8/&b%uclans_player_deaths% &8(%uclans_player_kdr%)'
+        - ' &7Entry into: &b%uclans_player_joindate_formated%'
+        - ' &7Last Seen: &b%uclans_player_lastsee_formated%'
+        - ' '
+        - ' &eClick to view profile.'
+        nbt:
+          string:
+          - NbtExample:teste
+          integer:
+          - NbtExample2:0001
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aPrevious page'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aNext page'
+        lore:
+        - ''
+        - ' &eClick to proceed.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+  clans:
+    title: '&a&lVerified clans '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:5
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aClan %uclans_tag_color%'
+        lore:
+        - ''
+        - ' &eClan Information'
+        - ' &7'
+        - ' &7Level: &a%uclans_level%'
+        - ' &7'
+        - ' &7Tag: &b%uclans_tag_color%'
+        - ' &7Leader: &b%uclans_leader%'
+        - ' &7Members: &b%uclans_count_members%'
+        - ''
+        - ' &eRight-Click to view info.'
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aPrevious page'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aNext page'
+        lore:
+        - ''
+        - ' &eClick to proceed.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+  toplevel:
+    title: '&a&lTop LEVEL '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:5
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aClan %uclans_tag_color%'
+        lore:
+        - ''
+        - ' &eClan Information'
+        - ' &7'
+        - ' &7Level: &a%uclans_level%'
+        - ' &7'
+        - ' &7Tag: &b%uclans_tag_color%'
+        - ' &7Leader: &b%uclans_leader%'
+        - ' &7Members: &b%uclans_count_members%'
+        - ''
+        - ' &eRight-Click to view info.'
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aPrevious page'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aNext page'
+        lore:
+        - ''
+        - ' &eClick to proceed.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+  topkdr:
+    title: '&a&lTop KDR '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:5
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aClan %uclans_tag_color%'
+        lore:
+        - ''
+        - ' &eClan Information'
+        - ' &7'
+        - ' &7KDR: &a%uclans_clan_kdr%'
+        - ' &7'
+        - ' &7Tag: &b%uclans_tag_color%'
+        - ' &7Leader: &b%uclans_leader%'
+        - ' &7Members: &b%uclans_count_members%'
+        - ''
+        - ' &eRight-Click to view info.'
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aPrevious page'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aNext page'
+        lore:
+        - ''
+        - ' &eClick to proceed.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+  topkill:
+    title: '&a&lTop KILL '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:5
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aClan %uclans_tag_color%'
+        lore:
+        - ''
+        - ' &eClan Information'
+        - ' &7'
+        - ' &7Kills: &a%uclans_clan_kills%'
+        - ' &7'
+        - ' &7Tag: &b%uclans_tag_color%'
+        - ' &7Leader: &b%uclans_leader%'
+        - ' &7Members: &b%uclans_count_members%'
+        - ''
+        - ' &eRight-Click to view info.'
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aPrevious page'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aNext page'
+        lore:
+        - ''
+        - ' &eClick to proceed.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+  topdeath:
+    title: '&a&lTop DEATH '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:5
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aClan %uclans_tag_color%'
+        lore:
+        - ''
+        - ' &eClan Information'
+        - ' &7'
+        - ' &7Deaths: &a%uclans_clan_deaths%'
+        - ' &7'
+        - ' &7Tag: &b%uclans_tag_color%'
+        - ' &7Leader: &b%uclans_leader%'
+        - ' &7Members: &b%uclans_count_members%'
+        - ''
+        - ' &eRight-Click to view info.'
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aPrevious page'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aNext page'
+        lore:
+        - ''
+        - ' &eClick to proceed.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+  topmember:
+    title: '&a&lTop Member '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:5
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aClan %uclans_tag_color%'
+        lore:
+        - ''
+        - ' &eClan Information'
+        - ' &7'
+        - ' &7Members: &a%uclans_count_members%'
+        - ' &7'
+        - ' &7Tag: &b%uclans_tag_color%'
+        - ' &7Leader: &b%uclans_leader%'
+        - ' &7Members: &b%uclans_count_members%'
+        - ''
+        - ' &eRight-Click to view info.'
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aPrevious page'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aNext page'
+        lore:
+        - ''
+        - ' &eClick to proceed.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+  topbank:
+    title: '&a&lTop Bank '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:5
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aClan %uclans_tag_color%'
+        lore:
+        - ''
+        - ' &eClan Information'
+        - ' &7'
+        - ' &7Bank: &a$%uclans_bank_balance%'
+        - ' &7'
+        - ' &7Tag: &b%uclans_tag_color%'
+        - ' &7Leader: &b%uclans_leader%'
+        - ' &7Members: &b%uclans_count_members%'
+        - ''
+        - ' &eRight-Click to view info.'
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aPrevious page'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aNext page'
+        lore:
+        - ''
+        - ' &eClick to proceed.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+  topwar:
+    title: '&a&lTop War '
+    opensound: ''
+    items:
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aClan %uclans_tag_color%'
+        lore:
+        - ''
+        - ' &eClan Information'
+        - ' &7'
+        - ' &7Wars won: &a%uclans_clan_war_win%'
+        - ' &7'
+        - ' &7Tag: &b%uclans_tag_color%'
+        - ' &7Leader: &b%uclans_leader%'
+        - ' &7Members: &b%uclans_count_members%'
+        - ''
+        - ' &eRight-Click to view info.'
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:5
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aPrevious page'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aNext page'
+        lore:
+        - ''
+        - ' &eClick to proceed.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+  topall:
+    title: '&a&lLatest Clans '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:5
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aClan %uclans_tag_color%'
+        lore:
+        - ''
+        - ' &eClan Information'
+        - ' &7'
+        - ' &7Creation date: &a%uclans_creation_date_formated%'
+        - ' &7'
+        - ' &7Tag: &b%uclans_tag_color%'
+        - ' &7Leader: &b%uclans_leader%'
+        - ' &7Members: &b%uclans_count_members%'
+        - ''
+        - ' &eRight-Click to view info.'
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aPrevious page'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&aNext page'
+        lore:
+        - ''
+        - ' &eClick to proceed.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &eClick to Come back.'

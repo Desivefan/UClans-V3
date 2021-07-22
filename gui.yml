@@ -1,0 +1,1850 @@
+ 
+ 
+ 
+ 
+# HOME GUI
+ 
+ 
+ 
+ 
+Home:
+  #Clan Home config
+  clan_home:
+    title: '&a&lClan Home menu'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: BOW
+        texture: ''
+        data: 0
+        amount: 1
+        glow: false
+        name: '&aHome %uclans_home:<num>:name%'
+        lore:
+        - ''
+        - ' &eHome Information'
+        - ' &7'
+        - ' &7Server: &a%uclans_home:<num>:server%'
+        - ' &7Name: &b%uclans_home:<num>:name%'
+        - ''
+        - ' &eLeft-Click to teleport.'
+        - ' &cRight-Click to delete.'
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        data: 8
+        amount: 1
+        glow: false
+        name: '&aPrevious page'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        data: 8
+        amount: 1
+        glow: false
+        name: '&aNext page'
+        lore:
+        - ''
+        - ' &eClick to proceed.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        data: 0
+        amount: 1
+        glow: false
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+      create:
+        clicksound: ''
+        material: NAME_TAG
+        texture: ''
+        data: 0
+        amount: 1
+        glow: true
+        name: '&aCreate a new Home'
+        lore:
+        - ''
+        - ' &eClick to create.'
+      ally_homes:
+        clicksound: ''
+        material: BOW
+        texture: ''
+        data: 0
+        amount: 1
+        glow: true
+        name: '&aView Ally homes'
+        lore:
+        - ''
+        - ' &eClick to open.'
+  #Clan Home config
+  clan_allyhome:
+    title: '&a&lAllied Houses'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:5
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        data: 0
+        amount: 1
+        glow: false
+        name: '&aHome %uclans_home:<num>:name% of clan %uclans_tag_color% '
+        lore:
+        - ''
+        - ' &eHome Information'
+        - ' &7'
+        - ' &7Clan: &b%uclans_tag_color%'
+        - ' &7Server: &a%uclans_home:<num>:server%'
+        - ' &7Name: &b%uclans_home:<num>:name%'
+        - ''
+        - ' &eLeft-Click to teleport.'
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        data: 8
+        amount: 1
+        glow: false
+        name: '&aPrevious page'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        data: 8
+        amount: 1
+        glow: false
+        name: '&aNext page'
+        lore:
+        - ''
+        - ' &eClick to proceed.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        data: 0
+        amount: 1
+        glow: false
+        name: '&cCome back'
+        lore:
+        - ''
+        - ' &eClick to Come back.'
+  #Lock Home config
+  clan_delhome_confirm:
+    title: '&cConfirm delhome &4&l%home_name% &c?'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      confirm:
+        clicksound: ''
+        material: DIAMOND_BLOCK
+        amount: 1
+        glow: true
+        name: '&aClick to confirm'
+        lore:
+        - ' '
+        - ' &eClick to go confirm.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      cancel:
+        clicksound: ''
+        material: REDSTONE_BLOCK
+        amount: 1
+        glow: true
+        name: '&aClick to cancel'
+        lore:
+        - ' '
+        - ' &eClick to go cancel.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+ 
+ 
+ 
+ 
+# CHEST GUI
+ 
+ 
+ 
+ 
+Chest:
+  #Lod Chest config
+  load_chest:
+    title: '&cLoading items...'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:4;STAINED_GLASS_PANE:1
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      fill2:
+        clicksound: ''
+        material: CHEST
+        amount: 1
+        glow: false
+        name: ' &cWait...'
+        lore: [
+          ]
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+  #Lock Chest config
+  lock_chest:
+    title: '&cConfirm &b&lLock &cpage %page% ?'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      confirm:
+        clicksound: ''
+        material: DIAMOND_BLOCK
+        amount: 1
+        glow: true
+        name: '&aClick to confirm'
+        lore:
+        - ' '
+        - ' &eClick to go confirm home.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      cancel:
+        clicksound: ''
+        material: REDSTONE_BLOCK
+        amount: 1
+        glow: true
+        name: '&aClick to cancel'
+        lore:
+        - ' '
+        - ' &eClick to go cancel home.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+  #Lock Chest config
+  unlock_chest:
+    title: '&cConfirm &4&lUnLock &cpage %page% ?'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      confirm:
+        clicksound: ''
+        material: DIAMOND_BLOCK
+        amount: 1
+        glow: true
+        name: '&aClick to confirm'
+        lore:
+        - ' '
+        - ' &eClick to go confirm home.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      cancel:
+        clicksound: ''
+        material: REDSTONE_BLOCK
+        amount: 1
+        glow: true
+        name: '&aClick to cancel'
+        lore:
+        - ' '
+        - ' &eClick to go cancel home.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+  #Lock Chest config
+  buy_chest:
+    title: '&cConfirm &b&lBuy 1 Page &c?'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      confirm:
+        clicksound: ''
+        material: DIAMOND_BLOCK
+        amount: 1
+        glow: true
+        name: '&aClick to confirm'
+        lore:
+        - ' '
+        - ' &eClick to go confirm.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      cancel:
+        clicksound: ''
+        material: REDSTONE_BLOCK
+        amount: 1
+        glow: true
+        name: '&aClick to cancel'
+        lore:
+        - ' '
+        - ' &eClick to go cancel.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+  #Chest config
+  chest:
+    title: '&a&lChest of %uclans_tag_color% '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        amount: 1
+        glow: false
+        name: '&aClick to back'
+        lore:
+        - ' '
+        - ' &eClick to go back home.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      lock:
+        clicksound: ''
+        material: TRIPWIRE_HOOK
+        amount: 1
+        glow: true
+        name: '&aClick to lock this page'
+        lore:
+        - ' '
+        - ' &eYou can close this page for only'
+        - '&emoderators and administrators'
+        - '&eto use.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      unlock:
+        clicksound: ''
+        material: REDSTONE
+        amount: 1
+        glow: false
+        name: '&cClick to unlock this page'
+        lore:
+        - ' '
+        - ' &eClick to open this page&eagain for members.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      fill_locked:
+        clicksound: ''
+        material: STAINED_GLASS_PANE:14
+        amount: 1
+        glow: true
+        name: '&4PAGE LOCKED'
+        lore:
+        - ' '
+        - ' &cOnly moderators and administrators!'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      previous:
+        clicksound: ''
+        material: ARROW
+        amount: 1
+        glow: false
+        name: '&aPrevious Page'
+        lore:
+        - ' '
+        - ' &eClick to go previous page.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      next:
+        clicksound: ''
+        material: ARROW
+        amount: 1
+        glow: false
+        name: '&aNext Page'
+        lore:
+        - ' '
+        - ' &eClick to go next page.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      buy:
+        clicksound: ''
+        material: SLIME_BALL
+        amount: 1
+        glow: true
+        name: '&a&aBuy extra chests.'
+        lore:
+        - ' '
+        - ' &fPrice: &a$%price%'
+        - ' &fExtra Limit: &b%clan_extra%&7/&b%clan_limit%'
+        - ' '
+        - '&eClick to buy!'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+ 
+ 
+ 
+ 
+# WAR GUI
+ 
+ 
+ 
+ 
+War:
+  #Chest config
+  war_amount:
+    title: '&a&lSelect max amount of Players.'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        amount: 1
+        glow: false
+        name: '&aClick to back'
+        lore:
+        - ' '
+        - ' &eClick to go back home.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      select:
+        clicksound: ''
+        material: PLAYER_HEAD:3
+        amount: 1
+        glow: false
+        name: '&a%amount%'
+        lore:
+        - ' '
+        - ' &eClick to select'
+        # %player%, nicknames or base64Textures
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTBlZTY4NjJmNDE4ZDY2YTViZGIwMzk2YTQyZDdjZTNlNGIyZTgxZGMzMDA2ZWIzNWI2NDRjOTNkZjQ4ZGZiMSJ9fX0=
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+  #Chest config
+  war_select_clan:
+    title: '&a&lSelect a Clan'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      previous:
+        clicksound: ''
+        material: ARROW
+        amount: 1
+        glow: false
+        name: '&aPrevious Page'
+        lore:
+        - ' '
+        - ' &eClick to go previous page.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      next:
+        clicksound: ''
+        material: ARROW
+        amount: 1
+        glow: false
+        name: '&aNext Page'
+        lore:
+        - ' '
+        - ' &eClick to go next page.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        amount: 1
+        glow: false
+        name: '&aClick to back'
+        lore:
+        - ' '
+        - ' &eClick to go back home.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      select:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        amount: 1
+        glow: false
+        name: '&b%uclans_tag_color%'
+        lore:
+        - ' '
+        - ' &fClan: &b%uclans_tag_color%'
+        - ' &fLeader: &b%uclans_leader%'
+        - ' &fOnline: &b%uclans_count_onlinemembers%'
+        - ' '
+        - ' &eClick to select'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+  #Chest config
+  war_select_arena:
+    title: '&a&lSelect a Arena'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      previous:
+        clicksound: ''
+        material: ARROW
+        amount: 1
+        glow: false
+        name: '&aPrevious Page'
+        lore:
+        - ' '
+        - ' &eClick to go previous page.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      next:
+        clicksound: ''
+        material: ARROW
+        amount: 1
+        glow: false
+        name: '&aNext Page'
+        lore:
+        - ' '
+        - ' &eClick to go next page.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        amount: 1
+        glow: false
+        name: '&aClick to back'
+        lore:
+        - ' '
+        - ' &eClick to go back home.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      select:
+        clicksound: ''
+        material: DIAMOND_SWORD
+        amount: 1
+        glow: true
+        name: '&a%arena_name%'
+        lore:
+        - ' '
+        - ' &eClick to select.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+  #Chest config
+  war_select_kit:
+    title: '&a&lSelect kit mode.'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      previous:
+        clicksound: ''
+        material: ARROW
+        amount: 1
+        glow: false
+        name: '&aPrevious Page'
+        lore:
+        - ' '
+        - ' &eClick to go previous page.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      next:
+        clicksound: ''
+        material: ARROW
+        amount: 1
+        glow: false
+        name: '&aNext Page'
+        lore:
+        - ' '
+        - ' &eClick to go next page.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        amount: 1
+        glow: false
+        name: '&aClick to back'
+        lore:
+        - ' '
+        - ' &eClick to go back home.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      select: ''
+      nokit:
+        clicksound: ''
+        material: BARRIER
+        amount: 1
+        glow: false
+        name: '&cDO NOT USE KIT'
+        lore:
+        - ' '
+        - ' &e Click to send the challenge'
+        - '&ewith player items.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      yeskit:
+        clicksound: ''
+        material: CHEST
+        amount: 1
+        glow: true
+        name: '&aYES, USE KIT'
+        lore:
+        - ' '
+        - ' &e Click to open a kit selector.'
+        - ' '
+        - '&c&l All participant inventory'
+        - '&c&l must be empty!'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+  #Chest config
+  war_select_kit_list:
+    title: '&a&lSelect a kit.'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      previous:
+        clicksound: ''
+        material: ARROW
+        amount: 1
+        glow: false
+        name: '&aPrevious Page'
+        lore:
+        - ' '
+        - ' &eClick to go previous page.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      next:
+        clicksound: ''
+        material: ARROW
+        amount: 1
+        glow: false
+        name: '&aNext Page'
+        lore:
+        - ' '
+        - ' &eClick to go next page.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        amount: 1
+        glow: false
+        name: '&aClick to back'
+        lore:
+        - ' '
+        - ' &eClick to go back home.'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      select:
+        clicksound: ''
+        material: IRON_SWORD
+        amount: 1
+        glow: true
+        name: '&a%kit_name%'
+        lore:
+        - ' '
+        - ' &7Desc: &b%kit_desc%'
+        - ' &7Creation: &b%kit_creation_date%'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+ 
+ 
+ 
+ 
+# GENERAL GUI
+ 
+ 
+ 
+ 
+General:
+  noclan_home:
+    title: '&a&lClan Menu &c(without Clan)'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      create:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: true
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTNlMWNiYjFmNDNmYTUxMzA4Yzg0Y2E1ZjNhNTUwMTc4ODE1ODFkZGI5NWZkM2M2OGE5ZGRhMjA5ZDA0NTVhYiJ9fX0=
+        amount: 1
+        name: '&cYou dont have a Clan'
+        lore:
+        - ' &eClick to create a Clan.'
+      clans:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDM4Y2YzZjhlNTRhZmMzYjNmOTFkMjBhNDlmMzI0ZGNhMTQ4NjAwN2ZlNTQ1Mzk5MDU1NTI0YzE3OTQxZjRkYyJ9fX0=
+        amount: 1
+        name: '&aAll Clans'
+        lore:
+        - ' &eClick to open the clan list menu.'
+      commands:
+        clicksound: ''
+        material: PAPER
+        glow: true
+        texture: ''
+        amount: 1
+        name: '&aCommand List and Help'
+        lore:
+        - ' &eClick to see the complete list'
+        - '&eof commands for Clans and Land.'
+  clan_home:
+    title: '&a&lClan Menu'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      info:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDAxYWZlOTczYzU0ODJmZGM3MWU2YWExMDY5ODgzM2M3OWM0MzdmMjEzMDhlYTlhMWEwOTU3NDZlYzI3NGEwZiJ9fX0=
+        amount: 1
+        name: '&aClan %uclans_tag_color%'
+        lore:
+        - ' &eClan Information'
+        - ' &7'
+        - ' &7Clan Level: &a%uclans_level%'
+        - ' &7Clan Points: &a%uclans_points%'
+        - ' &7Bank: &a$%uclans_bank_balance%'
+        - ' &7'
+        - ' &7Tag: &b%uclans_tag_color%'
+        - ' &7Name: &b%uclans_name%'
+        - ' &7Desc: &b%uclans_desc_color%'
+        - ' '
+        - ' &eClick to open a status list.'
+      quest:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQxOWMzNTA0ZjY2ODRiMGE1NWZkMDY5Y2NhZGUyZWI2NTk3MjRjYThiYjEwYzIwZjJkZTUwNWFhNGMyZGVmYiJ9fX0=
+        amount: 1
+        name: '&aClan Quest'
+        lore:
+        - ' '
+        - ' &7Completed Quests: &a%uclans_quest_finished%'
+        - ' &7Clan Level: &a%uclans_level%'
+        - ' '
+        - ' &eClick to open quest menu'
+      king:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTBlZTY4NjJmNDE4ZDY2YTViZGIwMzk2YTQyZDdjZTNlNGIyZTgxZGMzMDA2ZWIzNWI2NDRjOTNkZjQ4ZGZiMSJ9fX0=
+        amount: 1
+        name: '&aClan King'
+        lore:
+        - ' '
+        - ' &eClick to open the king menu.'
+      members:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQxZmFjNmIyYTgyODg1ODk1YzVhN2I2OTc2OWE4NWFmOTBhZmRkOGMzZDNhYjUxOTRjYzU3ODU5MTBiZDM0NSJ9fX0=
+        amount: 1
+        name: '&aClan Members'
+        lore:
+        - ' '
+        - ' &7Members: &b%uclans_count_members%'
+        - ' '
+        - ' &eClick to open the members menu.'
+      rival:
+        clicksound: ''
+        material: GOLD_HELMET
+        glow: true
+        texture: ''
+        amount: 1
+        name: '&aRivalries'
+        lore:
+        - ' '
+        - ' &7Rivals: &b%uclans_clan_count_rival%'
+        - ' '
+        - ' &eClick to open the rivalries menu.'
+      ally:
+        clicksound: ''
+        material: DIAMOND_HELMET
+        glow: true
+        texture: ''
+        amount: 1
+        name: '&aAlliances'
+        lore:
+        - ' '
+        - ' &7Allies: &b%uclans_clan_count_ally%'
+        - ' '
+        - ' &eClick to open the alliances menu.'
+      home:
+        clicksound: ''
+        material: BOW
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aOpen home menu.'
+        lore:
+        - ' &eClick to open.'
+      settings:
+        clicksound: ''
+        material: REDSTONE_COMPARATOR
+        glow: true
+        texture: ''
+        amount: 1
+        name: '&aClan Settings'
+        lore:
+        - ' &eClick to open.'
+      war:
+        clicksound: ''
+        material: DIAMOND_SWORD
+        glow: true
+        texture: ''
+        amount: 1
+        name: '&aClan War'
+        lore:
+        - ' &eClick to open.'
+      commands:
+        clicksound: ''
+        material: PAPER
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aCommand List and Help'
+        lore:
+        - ' &eClick to see the complete list'
+        - '&eof commands for Clans and Land.'
+      clans:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDM4Y2YzZjhlNTRhZmMzYjNmOTFkMjBhNDlmMzI0ZGNhMTQ4NjAwN2ZlNTQ1Mzk5MDU1NTI0YzE3OTQxZjRkYyJ9fX0=
+        amount: 1
+        name: '&aAll Clans'
+        lore:
+        - ' &eClick to open the clan list menu.'
+      banner:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aClan Banner'
+        lore:
+        - ' '
+        - ' &eBanner Information:'
+        - ''
+        - ' &fHas Banner: &b%uclans_hasbanner_formated%'
+        - ' '
+        - ' &eThe clan banner is your brand'
+        - '&eand your &b&lNEXUS &eused for land marking!'
+        - ' &eOnly the Leader or Moderators can'
+        - '&eedit the clan banner'
+      chest:
+        clicksound: ''
+        material: Chest
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aShared Chest'
+        lore:
+        - ' &eClick to open shared Chest.'
+      bank:
+        clicksound: ''
+        material: SUNFLOWER
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aBank of Clan.'
+        lore:
+        - ' &7Bank: &a$%uclans_bank_balance%'
+        - ' &7'
+        - '&eClick to open.'
+  player_profile:
+    title: '&a&lProfile of %uclans_player%'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&cBack home'
+        lore:
+        - ' &eClick to return to home'
+      head:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: '%uclans_player%'
+        amount: 1
+        name: '&a%uclans_player%'
+        lore:
+        - ''
+        - ' &7Clan: &b%uclans_tag_color%'
+        - ' &7Leader: &b%uclans_leader%'
+        - ' '
+        - ' &7Nickname: &b%uclans_player%'
+        - ' &7Kdr: &b%uclans_player_kills%&8/&b%uclans_player_deaths% &8(%uclans_player_kdr%)'
+        - ' &7Entry into: &b%uclans_player_joindate_formated%'
+        - ' &7Last Seen: &b%uclans_player_lastsee_formated%'
+  clan_stats:
+    title: '&a&lStats of Clan %uclans_tag_color%'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      foundation:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: '%uclans_leader%'
+        amount: 1
+        name: '&aFoundation:'
+        lore:
+        - ' '
+        - '&eAbout the foundation:'
+        - ' '
+        - ' &7Leader: &b%uclans_leader%'
+        - ' &7Creation date: &b%uclans_creation_date_formated%'
+        - ' &7Is Verified: &f%uclans_verified%'
+        - ' '
+        - ' &7Moderators (%uclans_count_moderators%):'
+        - '  &a%uclans_moderators%'
+        - ' &7Clan ID: &b#%uclans_clanid%'
+      kdr:
+        clicksound: ''
+        material: DIAMOND_SWORD
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aKDR:'
+        lore:
+        - ' '
+        - '&eAbout the kdr:'
+        - ' '
+        - ' &7Kills: &b%uclans_clan_kills%'
+        - ' &7Deaths: &b%uclans_clan_deaths%'
+        - ' &7Kdr Total: &b%uclans_clan_kdr%'
+      war:
+        clicksound: ''
+        material: IRON_SWORD
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aWar stats:'
+        lore:
+        - ' '
+        - '&eAbout wars:'
+        - ' '
+        - ' &7War Win: &b%uclans_clan_war_win%'
+        - ' &7War Lose: &b%uclans_clan_war_lose%'
+        - ' &7War total: &b%uclans_clan_war_total%'
+      status:
+        clicksound: ''
+        material: SUNFLOWER
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aStatus:'
+        lore:
+        - ' '
+        - '&eAbout the Status:'
+        - ' '
+        - ' &7Bank: &a$%uclans_bank_balance%'
+        - ' &7Level: &b%uclans_level%'
+        - ' &7Max Level reached: &b%uclans_max_level_reached%'
+        - ' &7Clan Points: &b%uclans_points%'
+        - ' &7Quests Finished: &b%uclans_quest_finished%'
+      others:
+        clicksound: ''
+        material: ITEM_FRAME
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aOthers stats:'
+        lore:
+        - ' '
+        - '&eOthers:'
+        - ' '
+        - ' &7Members Joined: &b%uclans_clan_member_joined%'
+        - ' &7Members Left: &b%uclans_clan_member_leave%'
+        - ' &7Members Kicked: &b%uclans_clan_member_kicked%'
+        - ' &7Tag changes: &b%uclans_clan_tag_changed%'
+      member_rival_ally:
+        clicksound: ''
+        material: GOLD_CHESTPLATE
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aMembers, Rivals and Allies:'
+        lore:
+        - ' '
+        - '&eAbout Members, rivals and allies:'
+        - ' '
+        - ' &7Members: &b%uclans_count_members%'
+        - ' &7Online Members: &b%uclans_count_onlinemembers%'
+        - ' &7Allies: &b%uclans_clan_count_ally%'
+        - ' &7Rivals: &b%uclans_clan_count_rival%'
+      limits:
+        clicksound: ''
+        material: HOPPER
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aClan Limits:'
+        lore:
+        - ' '
+        - '&eAbout Limits:'
+        - ' '
+        - ' &7Homes: &b%uclans_limit_home%'
+        - ' &7Chests: &b%uclans_limit_chest%'
+        - ' &7Allies: &b%uclans_limit_ally%'
+        - ' &7Rivals: &b%uclans_limit_rival%'
+        - ' '
+        - ' &eThe limits are increased as'
+        - '&ethe clan gains levels.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&cCome back'
+        lore:
+        - ' &eClick to go back'
+  clan_settings:
+    title: '&a&lClan Settings Menu'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:14
+        amount: 1
+        glow: false
+        name: ' '
+        lore: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      warinvite:
+        clicksound: ''
+        material: PAPER
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aWar Invitations'
+        lore:
+        - ' '
+        - ' &fState: %uclans_settings_state:WARINVITE%'
+        - ''
+        - ' &eClick to toggle.'
+        - ' '
+        - ' &cWhen disabled, your clan'
+        - '&cdoes not receive challenges'
+      allysharedchat:
+        clicksound: ''
+        material: PAPER
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aAllied shared chat'
+        lore:
+        - ' '
+        - ' &fState: %uclans_settings_state:ALLYSHAREDCHAT%'
+        - ''
+        - ' &eClick to toggle.'
+        - ' '
+        - ' &cWhen disabled, your clan does not'
+        - '&creceive or send messages from allies.'
+      allysharedhome:
+        clicksound: ''
+        material: PAPER
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aAllied shared Home'
+        lore:
+        - ' '
+        - ' &fState: %uclans_settings_state:ALLYSHAREDHOME%'
+        - ''
+        - ' &eClick to toggle.'
+        - ' '
+        - ' &cWhen disabled, your clan''s homes will'
+        - '&cnot appear in the allied home list.'
+      ff:
+        clicksound: ''
+        material: PAPER
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aFire friend'
+        lore:
+        - ' '
+        - ' &fState: %uclans_settings_state:CLANFF%'
+        - ''
+        - ' &eClick to toggle.'
+        - ' '
+        - ' &cWhen activated, members can'
+        - '&cattack each other.'
+      join_leave:
+        clicksound: ''
+        material: PAPER
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aJoin and Leave'
+        lore:
+        - ' '
+        - ' &fState: %uclans_settings_state:JOINLEAVE%'
+        - ''
+        - ' &eClick to toggle.'
+        - ' '
+        - ' &cWhen disabled, your clan does not'
+        - '&cwill see more messages when'
+        - '&centering or leaving.'
+      make_banner:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aCreate or Edit the Banner'
+        lore:
+        - ' '
+        - ' &eClick to Open.'
+      delete:
+        clicksound: ''
+        material: STAINED_CLAY:14
+        glow: true
+        texture: ''
+        amount: 1
+        name: '&c&lDelete the clan'
+        lore:
+        - ' &eClick to delete the clan'
+        - ' &cOnly the Leader can do this!'
+        - ' &cThis will remove the protection from your land'
+        - ' &cThis requires confirmation in CHAT!'
+        - ' '
+        - ' &cCaution, this action cannot be undone!'
+      actions:
+        clicksound: ''
+        material: PAPER
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aActions'
+        lore:
+        - ' &eClick to open.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&cCome back'
+        lore:
+        - ' &eClick to go back'
+  clan_actions:
+    title: '&a&lClan Actions Menu'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:14
+        amount: 1
+        glow: false
+        name: ' '
+        lore: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      modtag:
+        clicksound: ''
+        material: MAP
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aChange the clan Tag'
+        lore:
+        - ' &eClick to change the Clan tag'
+      desc:
+        clicksound: ''
+        material: MAP
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aChanging the Clan Description'
+        lore:
+        - ' &eClick to change the Clan description.'
+      name:
+        clicksound: ''
+        material: MAP
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aChanging the Clan Name'
+        lore:
+        - ' &eClick to change the Clan name.'
+      sethome:
+        clicksound: ''
+        material: MAP
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aSet the Clan Home'
+        lore:
+        - ' &eClick to set the Clan Home'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&cCome back'
+        lore:
+        - ' &eClick to go back'
+  clan_top:
+    title: '&a&lTop List of Clans'
+    opensound: ''
+    items:
+      fill:
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      kdr:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGMxMWU0OWE2NDk3ZTc3YjViNDFkN2JiMzRlNTY3MzU5YWEzMjIyNTY5Y2ViOGM1MGU2M2YxYTVhZjdiZjUyOCJ9fX0=
+        amount: 1
+        name: '&cTop KDR'
+        lore:
+        - ' &eClick to open the'
+        - '&elist in order of KDR.'
+        - ' '
+        nbt:
+          string:
+          - NbtExample:teste
+          integer:
+          - NbtExample2:0001
+      kill:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjFmNTA1MmM3NGI3OTA1YmZmYmVmYjVjMTBiODU2NzViODk4M2VkYzllMWYyYjEwMWZmOTA2ZWI1YWMxNDQyYiJ9fX0=
+        amount: 1
+        name: '&cTop KILL'
+        lore:
+        - ' &eClick to open the'
+        - '&elist in order of KILL.'
+        - ' '
+        nbt:
+          string:
+          - NbtExample:teste
+          integer:
+          - NbtExample2:0001
+      death:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGE1ZDMzYWMzZDQwNjJlOWM3YjRhNDMzN2NiZWEzZmE1MGQ1NDNhZTJlMWNkODFiNmQwNzcxOGFhZDcwOTU3MSJ9fX0=
+        amount: 1
+        name: '&cTop DEATH'
+        lore:
+        - ' &eClick to open the'
+        - '&elist in order of DEATH.'
+        - ' '
+        nbt:
+          string:
+          - NbtExample:teste
+          integer:
+          - NbtExample2:0001
+      bank:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I4NDAwN2IyMDQ5Y2Q5Y2VkNDExN2QxMDc5M2IwNzZiYTUwZWJmNDQwNWU2Zjk2ZjU5ZjY3NTliYWJkMzE4NiJ9fX0=
+        amount: 1
+        name: '&cTop BANK'
+        lore:
+        - ' &eClick to open the'
+        - '&elist in order of BANK.'
+        - ' '
+        nbt:
+          string:
+          - NbtExample:teste
+          integer:
+          - NbtExample2:0001
+      member:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2UxZTFlODJiZjQzNzhhN2IxMzkyMjliNTYxYzhmMDExOWJmNTY1NTEyODAxNGQzYzU0MzlkODk4MzAzZjFiMCJ9fX0=
+        amount: 1
+        name: '&cTop MEMBER'
+        lore:
+        - ' &eClick to open the'
+        - '&elist in order of MEMBER.'
+        - ' '
+        nbt:
+          string:
+          - NbtExample:teste
+          integer:
+          - NbtExample2:0001
+      level:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJmZTVkOTE4YTM2NDhmMjM3OTk0MjQ0NzI0MGE0NzI1ZWQxOTY5NjhmZTI3M2QzNGJiZGNkZWQwNzJjMSJ9fX0
+        amount: 1
+        name: '&cTop Level'
+        lore:
+        - ' &eClick to open the'
+        - '&elist of top Clan level.'
+        - ' '
+        nbt:
+          string:
+          - NbtExample:teste
+          integer:
+          - NbtExample2:0001
+      all:
+        clicksound: ''
+        material: DIAMOND_SWORD
+        glow: true
+        texture: ''
+        amount: 1
+        name: '&cAll Verified'
+        lore:
+        - ' &eClick to open the'
+        - '&elist of all Clans.'
+        - ' '
+        nbt:
+          string:
+          - NbtExample:teste
+          integer:
+          - NbtExample2:0001
+      war:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTNlMWNiYjFmNDNmYTUxMzA4Yzg0Y2E1ZjNhNTUwMTc4ODE1ODFkZGI5NWZkM2M2OGE5ZGRhMjA5ZDA0NTVhYiJ9fX0=
+        amount: 1
+        name: '&cTop War'
+        lore:
+        - ' &eClick to open the'
+        - '&elist of top War.'
+        - ' '
+        nbt:
+          string:
+          - NbtExample:teste
+          integer:
+          - NbtExample2:0001
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&cCome back'
+        lore:
+        - ' &eClick to go back'
+  clan_members:
+    title: '&a&lClan Members Menu'
+    opensound: ''
+    items:
+      fill:
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      list:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        glow: false
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQxZmFjNmIyYTgyODg1ODk1YzVhN2I2OTc2OWE4NWFmOTBhZmRkOGMzZDNhYjUxOTRjYzU3ODU5MTBiZDM0NSJ9fX0=
+        amount: 1
+        name: '&aMember List'
+        lore:
+        - ' '
+        - ' &7Members: &b%uclans_count_members%'
+        - ' '
+        - ' &eClick to view the list of members'
+      invite:
+        clicksound: ''
+        material: MAP
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aInvite players'
+        lore:
+        - ' &eClick to invite new members'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&cCome back'
+        lore:
+        - ' &eClick to go back'
+  clan_ally:
+    title: '&a&lClan Alliances Menu'
+    opensound: ''
+    items:
+      list:
+        clicksound: ''
+        material: DIAMOND_CHESTPLATE
+        glow: true
+        texture: ''
+        amount: 1
+        name: '&aAlliances List'
+        lore:
+        - ' '
+        - ' &7Allies: &b%uclans_clan_count_ally%'
+        - ' '
+        - ' &eClick to view the list of alliances'
+      fill:
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      invite:
+        clicksound: ''
+        material: MAP
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aAdd or Remove Alliances'
+        lore:
+        - ' &eClick to add or remove alliances'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: false
+        texture: ''
+        amount: 1
+        slot: 31
+        name: '&cCome back'
+        lore:
+        - ' &eClick to go back'
+  clan_rival:
+    title: '&a&lClan Rivalries Menu'
+    opensound: ''
+    items:
+      fill:
+        material: STAINED_GLASS_PANE:7
+        amount: 1
+        glow: false
+        name: ' '
+        lore: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      list:
+        clicksound: ''
+        material: GOLD_HELMET
+        glow: true
+        texture: ''
+        amount: 1
+        name: '&aRivalries List'
+        lore:
+        - ' '
+        - ' &7Rivals: &b%uclans_clan_count_rival%'
+        - ' '
+        - ' &eClick to view the list of rivalries'
+      invite:
+        clicksound: ''
+        material: MAP
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&aAdd or Remove Rivalries'
+        lore:
+        - ' &eClick to add or remove rivalries'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: false
+        texture: ''
+        amount: 1
+        name: '&cCome back'
+        lore:
+        - ' &eClick to go back'
